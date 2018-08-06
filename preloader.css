@@ -17,8 +17,8 @@ footer img{
 .wrapper{
 	position: absolute;
 	float: left;
-    bottom: 50%;
-    right: 50%;
+    top: 50%;
+    left: 40%;
 	margin: 0 0;
 }
 
