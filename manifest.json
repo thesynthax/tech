@@ -1,5 +1,5 @@
 {
-  "name": "Web Application Manifest Sample",
+  "name": "Tech Project",
   "icons": [
     {
       "src": "launcher-icon-0-75x.png",
@@ -36,5 +36,5 @@
   "background_color": "#9E9E9E",
   "start_url": "index.html",
   "display": "standalone",
-  "orientation": "landscape"
+  "orientation": "portrait"
 }
