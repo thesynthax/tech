@@ -11,7 +11,7 @@
   			<div class="bar3"></div>
 		</div>
 		
-		<nav id="menu">
+		<nav id="menu" style="right: -200px;">
 			<ul>
 				<li id="l1" class="hvr-underline-from-left"><a href="#"><i class="fa fa-home hvr-grow" aria-hidden="true"></i>   Home</a></li>
 				<!--li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>
@@ -20,26 +20,6 @@
 				<li id="l3" class="hvr-underline-reveal"><a href="signin"><i class="fa fa-sign-in hvr-wobble-bottom" aria-hidden="true"></i>   Sign In</a></li>
 			</ul>
 		</nav>
-		<script type="text/javascript">
-			var toggleStatus = 0;
-			document.getElementById("menu").style.right = "-200px";
-			function toggle(x)
-			{
-				if (toggleStatus == 1)
-				{
-					document.getElementById("menu").style.right = "-200px";
-					x.classList.toggle("change");
-					toggleStatus = 0;
-				}
-				else if (toggleStatus == 0)
-				{
-					document.getElementById("menu").style.right = "0px";
-					x.classList.toggle("change");
-					toggleStatus = 1;
-				}
-
-			}
-		</script>
 	</div>
 	<div class="rect animated slideInUp">
 		<div class="rect2">
@@ -50,8 +30,11 @@
 						left: 6vw;
 						transform-origin: center;
 						position: absolute;
-						background-color: rgba(0, 0, 0, 0.1);">
-				<div class="animated slideInLeft delay-0.5s" style="height: 36vh;
+						background-color: rgba(0, 0, 0, 0.1);
+						border-top-left-radius: 35px;
+						border-bottom-right-radius: 35px;
+						">
+				<div class="textarea animated slideInLeft delay-0.5s" style="height: 36vh;
 																	width: 500px;
 																	top: 6vh;
 																	left: 8vw;

@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 	{% block title %}
-		<title></title>
+		<title>Orbitus &bull; Sign In</title>
 	{% endblock title %}
 	{% block content %}
 	<div class="header animated fadeIn">
@@ -11,7 +11,7 @@
   			<div class="bar3"></div>
 		</div>
 		
-		<nav id="menu">
+		<nav id="menu" style="right: -200px;">
 			<ul>
 				<li id="l1" class="hvr-underline-from-left"><a href="/"><i class="fa fa-home hvr-grow" aria-hidden="true"></i>   Home</a></li>
 				<!--li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>
@@ -20,26 +20,7 @@
 				<li id="l3" class="hvr-underline-reveal"><a href="/"><i class="fa fa-chevron-left hvr-grow-rotate" aria-hidden="true"></i>   Back</a></li>
 			</ul>
 		</nav>
-		<script type="text/javascript">
-			var toggleStatus = 0;
-			document.getElementById("menu").style.right = "-200px";
-			function toggle(x)
-			{
-				if (toggleStatus == 1)
-				{
-					document.getElementById("menu").style.right = "-200px";
-					x.classList.toggle("change");
-					toggleStatus = 0;
-				}
-				else if (toggleStatus == 0)
-				{
-					document.getElementById("menu").style.right = "0px";
-					x.classList.toggle("change");
-					toggleStatus = 1;
-				}
-
-			}
-		</script>
+		
 	</div>
 	<div class="rect animated flipInX">
 		<div class="rect2">
@@ -50,20 +31,34 @@
 						left: 6vw;
 						transform-origin: center;
 						position: absolute;
-						background-color: rgba(0, 0, 0, 0.1);">
+						background-color: rgba(0, 0, 0, 0.1);
+						border-top-left-radius: 35px;
+						border-bottom-right-radius: 35px;
+						">
 				<div style="height: 43vh;
-							width: calc(55vw);
+							width: calc(60vw);
 							top: 6vh;
-							left: calc(10vw - 15px);
+							left: calc(10vw - 20px);
 							transform-origin: center;
 							position: absolute;
 							background-color: rgba(0, 0, 0, 0.0);
 							border-width: thin;
-							border-style: solid;
+							border-style: none;
 							border-color: #1E0731;
 							text-align: left">
-					Username:
-
+					<div class="bodyContent">
+						<div class="loginbox">
+							<form>
+								Username<br>
+								<input type="text" name="" placeholder="e.g. wakawaka123"><br><br>
+								Password<br>
+								<input type="password" name="" placeholder="e.g. &bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"><br><br>
+								<input type="submit" name="" value="Login In" class="hvr-fade"><br><br>
+								<a href="#" style="text-decoration: none">Lost your password?</a><br>
+								<a href="#" style="text-decoration: none">Don't have an account?</a><br>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 
