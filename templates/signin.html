@@ -4,7 +4,7 @@
 	{% endblock title %}
 	{% block content %}
 	<div class="header animated fadeIn">
-		Sign in
+		Log in
 		<div id="toggleIcon" onclick="toggle(this)">
 			<div class="bar1"></div>
  			<div class="bar2"></div>
@@ -17,13 +17,14 @@
 				<!--li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>
 				Account</a></li-->
 				<li id="l2" class="hvr-underline-from-center"><a href="#"><i class="fa fa-info-circle hvr-bob" aria-hidden="true"></i>   About</a></li><br>
-				<li id="l3" class="hvr-underline-reveal"><a href="/"><i class="fa fa-chevron-left hvr-grow-rotate" aria-hidden="true"></i>   Back</a></li>
+				<li id="l3" class="hvr-underline-from-right"><a href="signup"><i class="fa fa-user-plus hvr-wobble-bottom" aria-hidden="true"></i>   Sign Up</a></li>
+				<li id="l4" class="hvr-underline-reveal"><a href="javascript:history.back()"><i class="fa fa-chevron-left hvr-grow-rotate" aria-hidden="true"></i>   Back</a></li>
 			</ul>
 		</nav>
 	</div>
 	<div class="rect animated flipInX">
 		<div class="rect2">
-			<h1 class="headText animated fadeIn">Log In</h1>
+			<h1 class="headText animated fadeIn">Sign In</h1>
 			<div style="height: 50vh;
 						width: 68vw;
 						top: 15vh;
@@ -48,13 +49,13 @@
 					<div class="bodyContent">
 						<div class="loginbox">
 							<form>
-								Username<br>
-								<input type="text" name="" placeholder="e.g. wakawaka123"><br><br>
+								Username/UniqueID<br>
+								<input type="text" name="" placeholder="e.g. wakawaka123 or #1234"><br><br>
 								Password<br>
 								<input type="password" name="" placeholder="e.g. &bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"><br><br>
 								<input type="submit" name="" value="Login In" class="hvr-fade"><br><br>
 								<a href="#" style="text-decoration: none">Lost your password?</a><br>
-								<a href="#" style="text-decoration: none">Don't have an account?</a><br>
+								<a href="signup" style="text-decoration: none">Don't have an account?</a><br>
 							</form>
 						</div>
 					</div>
